@@ -2,13 +2,13 @@
 //  Catalogue+CoreDataProperties.swift
 //  sertifikasi-library
 //
-//  Created by Aldi Mahotma on 17/12/22.
+//  Created by Aldi Mahotma on 18/12/22.
 //
 //
 
 import Foundation
 import CoreData
-
+import SwiftUI
 
 extension Catalogue {
 
@@ -16,10 +16,10 @@ extension Catalogue {
         return NSFetchRequest<Catalogue>(entityName: "Catalogue")
     }
 
+    @NSManaged public var catalogue_image: UIImage?
     @NSManaged public var catalogue_name: String?
-    @NSManaged public var catalogue_image: String?
-    @NSManaged public var is_deleted: Bool
     @NSManaged public var create_date: Date?
+    @NSManaged public var is_deleted: Bool
     @NSManaged public var loan: NSSet?
 
 }

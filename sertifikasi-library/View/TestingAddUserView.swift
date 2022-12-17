@@ -12,6 +12,7 @@ struct TestingAddUserView: View {
     @State var address: String = ""
     @State var phone: String = ""
     @StateObject var userVM = UserViewModel()
+    @Binding var sheetAvailable: Bool
     
     var body: some View {
         VStack(spacing: 20) {
@@ -38,16 +39,15 @@ struct TestingAddUserView: View {
             .padding(20)
             Button("Submit") {
                 userVM.addUser(name: username, address: address, is_admin: true, phone: phone)
-                
-                
+                sheetAvailable.toggle()
             }
             Spacer()
         }
     }
 }
 
-struct TestingAddUserView_Previews: PreviewProvider {
-    static var previews: some View {
-        TestingAddUserView()
-    }
-}
+//struct TestingAddUserView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TestingAddUserView()
+//    }
+//}

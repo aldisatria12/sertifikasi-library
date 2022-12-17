@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G72" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Catalogue" representedClassName="Catalogue" syncable="YES">
-        <attribute name="catalogue_image" optional="YES" attributeType="String"/>
+        <attribute name="catalogue_image" attributeType="Transformable" customClassName="UIImage"/>
         <attribute name="catalogue_name" optional="YES" attributeType="String"/>
         <attribute name="create_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="is_deleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>

@@ -9,21 +9,27 @@ import SwiftUI
 
 struct AllUsersView: View {
     @StateObject var userVM = UserViewModel()
+    @State var sheetAddUsers = false
     var body: some View {
-        NavigationView {
-            VStack{
-                NavigationLink("Add User") {
-                    TestingAddUserView()
-                }
-                List {
-                    ForEach(userVM.users) { user in
-                        Text(user.username ?? "missing")
-                    }
-                }
-                .listStyle(PlainListStyle())                
+        VStack{
+//            NavigationLink("Add User") {
+//                TestingAddUserView()
+//            }
+            Button {
+                sheetAddUsers.toggle()
+            } label: {
+                Text("Add User")
             }
+            .sheet(isPresented: $sheetAddUsers) {
+                TestingAddUserView(sheetAvailable: $sheetAddUsers)
+            }
+            List {
+                ForEach(userVM.users) { user in
+                    Text(user.username ?? "missing")
+                }
+            }
+            .listStyle(PlainListStyle())
         }
-        .navigationTitle("Available Users")
     }
 }
 

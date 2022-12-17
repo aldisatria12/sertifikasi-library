@@ -13,8 +13,8 @@ struct sertifikasi_libraryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AllUsersView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TabBarView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
