@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G72" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Catalogue" representedClassName="Catalogue" syncable="YES">
+        <attribute name="catalogue_image" optional="YES" attributeType="String"/>
+        <attribute name="catalogue_name" optional="YES" attributeType="String"/>
+        <attribute name="create_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="is_deleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="loan" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Loan" inverseName="catalogue" inverseEntity="Loan"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="Loan" representedClassName="Loan" syncable="YES">
+        <attribute name="is_returned" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="loan_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="return_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="catalogue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Catalogue" inverseName="loan" inverseEntity="Catalogue"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="loan" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="create_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="is_admin" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="is_deleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="loan" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Loan" inverseName="user" inverseEntity="Loan"/>
+    </entity>
 </model>
