@@ -10,6 +10,7 @@ import SwiftUI
 struct AllUsersView: View {
     @StateObject var userVM = UserViewModel()
     @State var allUser: [User] = []
+    @State var selectedUser = 0
     @State var sheetAddUsers = false
     @State var sheetEditUsers = false
     var body: some View {
@@ -25,17 +26,25 @@ struct AllUsersView: View {
             .sheet(isPresented: $sheetAddUsers) {
                 TestingAddUserView(sheetAvailable: $sheetAddUsers)
             }
-            List {
-                ForEach(allUser) { user in
+//            List {
+            VStack {
+                ForEach(0..<allUser.count, id: \.self) { i in
                     Button {
+                        selectedUser = i
                         sheetEditUsers.toggle()
                     } label: {
-                        Text(user.username ?? "missing")
+                        Text(allUser[i].username ?? "missing")
                     }
                     .sheet(isPresented: $sheetEditUsers) {
-                        EditUserView(user: user, sheetAvailable: $sheetEditUsers)
+                        EditUserView(user: selectedUser, sheetAvailable: $sheetEditUsers)
                     }
-                }
+                }                
+            }
+//            }
+            
+            .onAppear {
+                userVM.fetchUsers()
+                allUser = userVM.users
             }
             .listStyle(PlainListStyle())
         }
@@ -44,10 +53,6 @@ struct AllUsersView: View {
             allUser = userVM.users
         })
         .onChange(of: sheetAddUsers) { newValue in
-            userVM.fetchUsers()
-            allUser = userVM.users
-        }
-        .onAppear {
             userVM.fetchUsers()
             allUser = userVM.users
         }

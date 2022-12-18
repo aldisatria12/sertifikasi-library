@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditUserView: View {
-    var user: User
+    var user: Int
     @State var username: String = ""
     @State var address: String = ""
     @State var phone: String = ""
@@ -45,12 +45,12 @@ struct EditUserView: View {
             .padding(20)
             HStack {
                 Button("Delete") {
-                    userVM.deleteUser(data: user)
+                    userVM.deleteUser(data: userVM.users[user])
                     sheetAvailable.toggle()
                 }
                 .padding(20)
                 Button("Submit") {
-                    userVM.editUser(data: user, name: username, address: address, is_admin: isAdmin, phone: phone)
+                    userVM.editUser(data: userVM.users[user], name: username, address: address, is_admin: isAdmin, phone: phone)
                     sheetAvailable.toggle()
                 }
                 .padding(20)
@@ -58,10 +58,12 @@ struct EditUserView: View {
             Spacer()
         }
         .onAppear {
-            username = user.username!
-            address = user.address!
-            phone = user.phone!
-            isAdmin = user.is_admin
+            print(user)
+            userVM.fetchUsers()
+            username = userVM.users[user].username!
+            address = userVM.users[user].address!
+            phone = userVM.users[user].phone!
+            isAdmin = userVM.users[user].is_admin
         }
     }
 }
