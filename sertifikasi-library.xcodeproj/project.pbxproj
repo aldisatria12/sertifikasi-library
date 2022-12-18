@@ -13,7 +13,6 @@
 		3E342CE4294E4C2E001CB6DD /* CatalogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E342CE3294E4C2E001CB6DD /* CatalogueViewModel.swift */; };
 		3E342CE6294E58C3001CB6DD /* CatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E342CE5294E58C3001CB6DD /* CatalogueView.swift */; };
 		3E342CE8294E599B001CB6DD /* TestingAddCatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E342CE7294E599B001CB6DD /* TestingAddCatalogueView.swift */; };
-		3E365168294E755200AAE128 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E365167294E755200AAE128 /* TabBarView.swift */; };
 		3E36516A294E81F700AAE128 /* MemberCatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E365169294E81F700AAE128 /* MemberCatalogueView.swift */; };
 		3E37D1D1294E72B900849264 /* Catalogue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37D1CF294E72B900849264 /* Catalogue+CoreDataClass.swift */; };
 		3E37D1D2294E72B900849264 /* Catalogue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37D1D0294E72B900849264 /* Catalogue+CoreDataProperties.swift */; };
@@ -25,6 +24,8 @@
 		3E8B78C3294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78C2294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift */; };
 		3E8B78C5294F2CE700E1A53E /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78C4294F2CE700E1A53E /* EditUserView.swift */; };
 		3E8B78C7294F2F7200E1A53E /* EditCatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78C6294F2F7200E1A53E /* EditCatalogueView.swift */; };
+		3E8B78C9294F3D4000E1A53E /* TabBarAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78C8294F3D4000E1A53E /* TabBarAdminView.swift */; };
+		3E8B78CB294F3E4D00E1A53E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78CA294F3E4D00E1A53E /* LoginView.swift */; };
 		3EEE2E97294DD0AD0066E7E0 /* sertifikasi_libraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEE2E96294DD0AD0066E7E0 /* sertifikasi_libraryApp.swift */; };
 		3EEE2E99294DD0AD0066E7E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEE2E98294DD0AD0066E7E0 /* ContentView.swift */; };
 		3EEE2E9B294DD0AD0066E7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEE2E9A294DD0AD0066E7E0 /* Assets.xcassets */; };
@@ -44,7 +45,6 @@
 		3E342CE3294E4C2E001CB6DD /* CatalogueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueViewModel.swift; sourceTree = "<group>"; };
 		3E342CE5294E58C3001CB6DD /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
 		3E342CE7294E599B001CB6DD /* TestingAddCatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAddCatalogueView.swift; sourceTree = "<group>"; };
-		3E365167294E755200AAE128 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		3E365169294E81F700AAE128 /* MemberCatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCatalogueView.swift; sourceTree = "<group>"; };
 		3E37D1CF294E72B900849264 /* Catalogue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3E37D1D0294E72B900849264 /* Catalogue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -56,6 +56,8 @@
 		3E8B78C2294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoanedCatalogueView.swift; sourceTree = "<group>"; };
 		3E8B78C4294F2CE700E1A53E /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
 		3E8B78C6294F2F7200E1A53E /* EditCatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCatalogueView.swift; sourceTree = "<group>"; };
+		3E8B78C8294F3D4000E1A53E /* TabBarAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAdminView.swift; sourceTree = "<group>"; };
+		3E8B78CA294F3E4D00E1A53E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3EEE2E93294DD0AD0066E7E0 /* sertifikasi-library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sertifikasi-library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEE2E96294DD0AD0066E7E0 /* sertifikasi_libraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sertifikasi_libraryApp.swift; sourceTree = "<group>"; };
 		3EEE2E98294DD0AD0066E7E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,7 +112,6 @@
 				3E342CE1294E4055001CB6DD /* AllUsersView.swift */,
 				3E342CE5294E58C3001CB6DD /* CatalogueView.swift */,
 				3E342CE7294E599B001CB6DD /* TestingAddCatalogueView.swift */,
-				3E365167294E755200AAE128 /* TabBarView.swift */,
 				3E365169294E81F700AAE128 /* MemberCatalogueView.swift */,
 				3E8B78B7294EA66200E1A53E /* AdminLoanView.swift */,
 				3E8B78B9294EAD7A00E1A53E /* AddLoanView.swift */,
@@ -118,6 +119,8 @@
 				3E8B78C2294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift */,
 				3E8B78C4294F2CE700E1A53E /* EditUserView.swift */,
 				3E8B78C6294F2F7200E1A53E /* EditCatalogueView.swift */,
+				3E8B78C8294F3D4000E1A53E /* TabBarAdminView.swift */,
+				3E8B78CA294F3E4D00E1A53E /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E8B78C7294F2F7200E1A53E /* EditCatalogueView.swift in Sources */,
-				3E365168294E755200AAE128 /* TabBarView.swift in Sources */,
 				3E8B78C5294F2CE700E1A53E /* EditUserView.swift in Sources */,
 				3E8B78BF294EB76700E1A53E /* SearchUserView.swift in Sources */,
 				3E342CE0294E3BCD001CB6DD /* TestingAddUserView.swift in Sources */,
@@ -260,8 +262,10 @@
 				3E36516A294E81F700AAE128 /* MemberCatalogueView.swift in Sources */,
 				3E342CE2294E4055001CB6DD /* AllUsersView.swift in Sources */,
 				3E8B78C1294EC08800E1A53E /* LoanViewModel.swift in Sources */,
+				3E8B78C9294F3D4000E1A53E /* TabBarAdminView.swift in Sources */,
 				3E8B78BA294EAD7A00E1A53E /* AddLoanView.swift in Sources */,
 				3E342CE4294E4C2E001CB6DD /* CatalogueViewModel.swift in Sources */,
+				3E8B78CB294F3E4D00E1A53E /* LoginView.swift in Sources */,
 				3EF5CAE7294DE29100B4909C /* Loan+CoreDataClass.swift in Sources */,
 				3E8B78B8294EA66200E1A53E /* AdminLoanView.swift in Sources */,
 				3E8B78C3294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift in Sources */,

@@ -48,6 +48,11 @@ struct LoanedCatalogueCardView: View {
                 .resizable()
                 .frame(width: UIScreen.main.bounds.width * 100 / 390, height: UIScreen.main.bounds.height * 100 / 844)
             Text(loan.catalogue?.catalogue_name ?? "Missing")
+            Text(loan.user?.username ?? "Missing")
+            VStack {
+                Text("\(loan.loan_date!)")
+                Text("\(loan.return_date!)")
+            }
         }
     }
 }

@@ -60,4 +60,14 @@ class UserViewModel: ObservableObject {
         }
         fetchUsers()
     }
+    
+    func login(username: String) -> Int {
+//        fetchUsers()
+        guard let loginUser = users.filter({ $0.username?.lowercased() == username.lowercased() }).first else { return 0 }
+        if loginUser.is_admin {
+            return 1
+        } else {
+            return 2
+        }
+    }
 }

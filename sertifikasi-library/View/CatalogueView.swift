@@ -29,7 +29,7 @@ struct CatalogueView: View {
                 }
 
                 List {
-                    ForEach(0..<allCatalogue.count) { i in
+                    ForEach(0..<allCatalogue.count, id: \.self) { i in
                         Button {
                             selectedCatalogue = i
                             sheetEditCatalogue.toggle()
@@ -50,15 +50,15 @@ struct CatalogueView: View {
                 }
                 .listStyle(PlainListStyle())
             }
+            .onAppear {
+                catalogueVM.fetchCatalogues()
+                allCatalogue = catalogueVM.catalogues
+            }
             .onChange(of: sheetAddCatalogue, perform: { newValue in
                 catalogueVM.fetchCatalogues()
                 allCatalogue = catalogueVM.catalogues
             })
             .onChange(of: sheetEditCatalogue) { newValue in
-                catalogueVM.fetchCatalogues()
-                allCatalogue = catalogueVM.catalogues
-            }
-            .onAppear {
                 catalogueVM.fetchCatalogues()
                 allCatalogue = catalogueVM.catalogues
             }

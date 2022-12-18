@@ -40,13 +40,11 @@ struct AllUsersView: View {
                     }
                 }                
             }
-//            }
-            
-            .onAppear {
-                userVM.fetchUsers()
-                allUser = userVM.users
-            }
             .listStyle(PlainListStyle())
+        }
+        .onAppear {
+            userVM.fetchUsers()
+            allUser = userVM.users
         }
         .onChange(of: sheetEditUsers, perform: { newValue in
             userVM.fetchUsers()
@@ -56,11 +54,5 @@ struct AllUsersView: View {
             userVM.fetchUsers()
             allUser = userVM.users
         }
-    }
-}
-
-struct AllUsersView_Previews: PreviewProvider {
-    static var previews: some View {
-        AllUsersView()
     }
 }
