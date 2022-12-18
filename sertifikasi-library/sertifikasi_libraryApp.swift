@@ -13,7 +13,7 @@ struct sertifikasi_libraryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            AdminLoanedCatalogueView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

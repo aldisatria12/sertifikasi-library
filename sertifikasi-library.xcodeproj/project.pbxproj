@@ -14,8 +14,15 @@
 		3E342CE6294E58C3001CB6DD /* CatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E342CE5294E58C3001CB6DD /* CatalogueView.swift */; };
 		3E342CE8294E599B001CB6DD /* TestingAddCatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E342CE7294E599B001CB6DD /* TestingAddCatalogueView.swift */; };
 		3E365168294E755200AAE128 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E365167294E755200AAE128 /* TabBarView.swift */; };
+		3E36516A294E81F700AAE128 /* MemberCatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E365169294E81F700AAE128 /* MemberCatalogueView.swift */; };
 		3E37D1D1294E72B900849264 /* Catalogue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37D1CF294E72B900849264 /* Catalogue+CoreDataClass.swift */; };
 		3E37D1D2294E72B900849264 /* Catalogue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E37D1D0294E72B900849264 /* Catalogue+CoreDataProperties.swift */; };
+		3E8B78B8294EA66200E1A53E /* AdminLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78B7294EA66200E1A53E /* AdminLoanView.swift */; };
+		3E8B78BA294EAD7A00E1A53E /* AddLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78B9294EAD7A00E1A53E /* AddLoanView.swift */; };
+		3E8B78BD294EB5E200E1A53E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78BC294EB5E200E1A53E /* ColorExtension.swift */; };
+		3E8B78BF294EB76700E1A53E /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78BE294EB76700E1A53E /* SearchUserView.swift */; };
+		3E8B78C1294EC08800E1A53E /* LoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78C0294EC08800E1A53E /* LoanViewModel.swift */; };
+		3E8B78C3294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B78C2294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift */; };
 		3EEE2E97294DD0AD0066E7E0 /* sertifikasi_libraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEE2E96294DD0AD0066E7E0 /* sertifikasi_libraryApp.swift */; };
 		3EEE2E99294DD0AD0066E7E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEE2E98294DD0AD0066E7E0 /* ContentView.swift */; };
 		3EEE2E9B294DD0AD0066E7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEE2E9A294DD0AD0066E7E0 /* Assets.xcassets */; };
@@ -36,8 +43,15 @@
 		3E342CE5294E58C3001CB6DD /* CatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueView.swift; sourceTree = "<group>"; };
 		3E342CE7294E599B001CB6DD /* TestingAddCatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAddCatalogueView.swift; sourceTree = "<group>"; };
 		3E365167294E755200AAE128 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		3E365169294E81F700AAE128 /* MemberCatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCatalogueView.swift; sourceTree = "<group>"; };
 		3E37D1CF294E72B900849264 /* Catalogue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3E37D1D0294E72B900849264 /* Catalogue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Catalogue+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3E8B78B7294EA66200E1A53E /* AdminLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoanView.swift; sourceTree = "<group>"; };
+		3E8B78B9294EAD7A00E1A53E /* AddLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanView.swift; sourceTree = "<group>"; };
+		3E8B78BC294EB5E200E1A53E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		3E8B78BE294EB76700E1A53E /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
+		3E8B78C0294EC08800E1A53E /* LoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewModel.swift; sourceTree = "<group>"; };
+		3E8B78C2294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoanedCatalogueView.swift; sourceTree = "<group>"; };
 		3EEE2E93294DD0AD0066E7E0 /* sertifikasi-library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sertifikasi-library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEE2E96294DD0AD0066E7E0 /* sertifikasi_libraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sertifikasi_libraryApp.swift; sourceTree = "<group>"; };
 		3EEE2E98294DD0AD0066E7E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +81,7 @@
 			children = (
 				3E342CDA294E33B9001CB6DD /* UserViewModel.swift */,
 				3E342CE3294E4C2E001CB6DD /* CatalogueViewModel.swift */,
+				3E8B78C0294EC08800E1A53E /* LoanViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -92,8 +107,21 @@
 				3E342CE5294E58C3001CB6DD /* CatalogueView.swift */,
 				3E342CE7294E599B001CB6DD /* TestingAddCatalogueView.swift */,
 				3E365167294E755200AAE128 /* TabBarView.swift */,
+				3E365169294E81F700AAE128 /* MemberCatalogueView.swift */,
+				3E8B78B7294EA66200E1A53E /* AdminLoanView.swift */,
+				3E8B78B9294EAD7A00E1A53E /* AddLoanView.swift */,
+				3E8B78BE294EB76700E1A53E /* SearchUserView.swift */,
+				3E8B78C2294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3E8B78BB294EB5D100E1A53E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B78BC294EB5E200E1A53E /* ColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		3EEE2E8A294DD0AD0066E7E0 = {
@@ -115,6 +143,7 @@
 		3EEE2E95294DD0AD0066E7E0 /* sertifikasi-library */ = {
 			isa = PBXGroup;
 			children = (
+				3E8B78BB294EB5D100E1A53E /* Extension */,
 				3E342CDE294E3BAF001CB6DD /* View */,
 				3E342CDD294E3427001CB6DD /* Model */,
 				3E342CDC294E33CF001CB6DD /* ViewModel */,
@@ -207,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E365168294E755200AAE128 /* TabBarView.swift in Sources */,
+				3E8B78BF294EB76700E1A53E /* SearchUserView.swift in Sources */,
 				3E342CE0294E3BCD001CB6DD /* TestingAddUserView.swift in Sources */,
 				3E37D1D2294E72B900849264 /* Catalogue+CoreDataProperties.swift in Sources */,
 				3E37D1D1294E72B900849264 /* Catalogue+CoreDataClass.swift in Sources */,
@@ -218,9 +248,15 @@
 				3EF5CAE4294DE29100B4909C /* User+CoreDataProperties.swift in Sources */,
 				3EEE2E99294DD0AD0066E7E0 /* ContentView.swift in Sources */,
 				3EEE2E97294DD0AD0066E7E0 /* sertifikasi_libraryApp.swift in Sources */,
+				3E8B78BD294EB5E200E1A53E /* ColorExtension.swift in Sources */,
+				3E36516A294E81F700AAE128 /* MemberCatalogueView.swift in Sources */,
 				3E342CE2294E4055001CB6DD /* AllUsersView.swift in Sources */,
+				3E8B78C1294EC08800E1A53E /* LoanViewModel.swift in Sources */,
+				3E8B78BA294EAD7A00E1A53E /* AddLoanView.swift in Sources */,
 				3E342CE4294E4C2E001CB6DD /* CatalogueViewModel.swift in Sources */,
 				3EF5CAE7294DE29100B4909C /* Loan+CoreDataClass.swift in Sources */,
+				3E8B78B8294EA66200E1A53E /* AdminLoanView.swift in Sources */,
+				3E8B78C3294ECE6C00E1A53E /* AdminLoanedCatalogueView.swift in Sources */,
 				3EF5CAE3294DE29100B4909C /* User+CoreDataClass.swift in Sources */,
 				3E342CE8294E599B001CB6DD /* TestingAddCatalogueView.swift in Sources */,
 			);
