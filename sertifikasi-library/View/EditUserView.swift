@@ -1,5 +1,5 @@
 //
-//  TestingAddUserView.swift
+//  EditUserView.swift
 //  sertifikasi-library
 //
 //  Created by Aldi Mahotma on 18/12/22.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct TestingAddUserView: View {
+struct EditUserView: View {
+    var user: User
     @State var username: String = ""
     @State var address: String = ""
     @State var phone: String = ""
@@ -42,17 +43,26 @@ struct TestingAddUserView: View {
                 Toggle("is admin?", isOn: $isAdmin)
             }
             .padding(20)
-            Button("Submit") {
-                userVM.addUser(name: username, address: address, is_admin: isAdmin, phone: phone)
-                sheetAvailable.toggle()
+            HStack {
+                Button("Delete") {
+                    userVM.deleteUser(data: user)
+                    sheetAvailable.toggle()
+                }
+                .padding(20)
+                Button("Submit") {
+                    userVM.editUser(data: user, name: username, address: address, is_admin: isAdmin, phone: phone)
+                    sheetAvailable.toggle()
+                }
+                .padding(20)
             }
             Spacer()
+        }
+        .onAppear {
+            username = user.username!
+            address = user.address!
+            phone = user.phone!
+            isAdmin = user.is_admin
         }
     }
 }
 
-//struct TestingAddUserView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TestingAddUserView()
-//    }
-//}

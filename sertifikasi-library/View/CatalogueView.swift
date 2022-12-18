@@ -9,7 +9,9 @@ import SwiftUI
 
 struct CatalogueView: View {
     @StateObject var catalogueVM = CatalogueViewModel()
+    @State var allCatalogue: [Catalogue] = []
     @State var sheetAddCatalogue = false
+    @State var sheetEditCatalogue = false
     var body: some View {
 //        NavigationView {
             VStack{
@@ -27,16 +29,36 @@ struct CatalogueView: View {
 
                 List {
                     ForEach(catalogueVM.catalogues) { catalogue in
-                        HStack {
-                            Text(catalogue.catalogue_name ?? "missing")
-                            Image(uiImage: catalogue.catalogue_image!)
-                                .resizable()
-                                .frame(width: 50, height: 50)
+                        Button {
+                            sheetEditCatalogue.toggle()
+                        } label: {
+                            HStack {
+                                Text(catalogue.catalogue_name ?? "missing")
+                                Image(uiImage: catalogue.catalogue_image!)
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                            }
                         }
+                        .sheet(isPresented: $sheetEditCatalogue) {
+                            EditCatalogueView(catalogue: catalogue, sheetAvailable: $sheetEditCatalogue)
+                        }
+
                     }
                     .id(catalogueVM.catalogues.count)
                 }
                 .listStyle(PlainListStyle())
+            }
+            .onChange(of: sheetAddCatalogue, perform: { newValue in
+                catalogueVM.fetchCatalogues()
+                allCatalogue = catalogueVM.catalogues
+            })
+            .onChange(of: sheetEditCatalogue) { newValue in
+                catalogueVM.fetchCatalogues()
+                allCatalogue = catalogueVM.catalogues
+            }
+            .onAppear {
+                catalogueVM.fetchCatalogues()
+                allCatalogue = catalogueVM.catalogues
             }
             
 //        }

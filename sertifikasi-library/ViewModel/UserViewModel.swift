@@ -25,6 +25,7 @@ class UserViewModel: ObservableObject {
         } catch let error {
             print("Error fetching data. \(error)")
         }
+        users = users.filter({ $0.is_deleted == false })
     }
     
     func addUser(name: String, address: String?, is_admin: Bool, phone: String) {
@@ -35,6 +36,19 @@ class UserViewModel: ObservableObject {
         newUser.is_deleted = false
         newUser.is_admin = is_admin
         newUser.phone = phone
+        saveData()
+    }
+    
+    func editUser(data: User, name: String, address: String?, is_admin: Bool, phone: String) {
+        data.setValue(name, forKey: "username")
+        data.setValue(address, forKey: "address")
+        data.setValue(is_admin, forKey: "is_admin")
+        data.setValue(phone, forKey: "phone")
+        saveData()
+    }
+    
+    func deleteUser(data: User) {
+        data.setValue(true, forKey: "is_deleted")
         saveData()
     }
     
